@@ -1,17 +1,35 @@
 CONFIG = {}
 -- defaults
+-- CONFIG["GW_HOSTNAME"]="lorawangw"
+-- CONFIG["GW_ROUTER"]="router.eu.thethings.network"
+-- CONFIG["GW_NTP_SERVER"]="nl.pool.ntp.org"
+-- CONFIG["GW_PORT"]=1700
+-- CONFIG["GW_FREQ"]=868100000
+-- CONFIG["GW_BW"]="BW125"
+-- CONFIG["GW_SF"]="ALL"
+-- CONFIG["GW_LAT"]="0.0"
+-- CONFIG["GW_LON"]="0.0"
+-- CONFIG["GW_ALT"]=0
+-- CONFIG["GW_NSS"]=0
+-- CONFIG["GW_DIO0"]=1
+-- CONFIG["GW_DIO1"]=2
+-- defaults
 CONFIG["GW_HOSTNAME"]="lorawangw"
-CONFIG["GW_ROUTER"]="router.eu.thethings.network"
-CONFIG["GW_PORT"]="1700"
-CONFIG["GW_FREQ"]=868100000
+-- CONFIG["GW_ROUTER"]="router.us.thethings.network"
+CONFIG["GW_ROUTER"]="192.168.2.106"
+-- CONFIG["GW_NTP_SERVER"]="nl.pool.ntp.org"
+CONFIG["GW_NTP_SERVER"]="us.pool.ntp.org"
+-- CONFIG["GW_PORT"]=1700
+CONFIG["GW_PORT"]=1680
+CONFIG["GW_FREQ"]=904300000
 CONFIG["GW_BW"]="BW125"
 CONFIG["GW_SF"]="ALL"
-CONFIG["GW_LAT"]="0.0"
-CONFIG["GW_LON"]="0.0"
-CONFIG["GW_ALT"]=0
+CONFIG["GW_LAT"]="32.79242" --djl Fanuel Park "0.0"
+CONFIG["GW_LON"]="-117.24457" --djl "0.0"
+CONFIG["GW_ALT"]=2 --djl 0
 CONFIG["GW_NSS"]=0
-CONFIG["GW_DIO0"]=1
-CONFIG["GW_DIO1"]=2
+CONFIG["GW_DIO0"]=8 --djl D8 1
+CONFIG["GW_DIO1"]=1 --djl D1 2
 
 local function printConfig()
   print("Configuration")
